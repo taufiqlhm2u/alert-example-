@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Status Alerts (Google Icons + Lucide)</title>
+  <!-- Google Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    .alert {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .alert .material-symbols-outlined,
+    .alert i {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Status colors */
+    .pending { background: #FEEED2; color: #E39B17; }
+    .inprogress { background: #D8EEFE; color: #2994F2; }
+    .submitted { background: #E8E3FD; color: #6E42F5; }
+    .inreview { background: #FFF6D7; color: #E2A20B; }
+    .success { background: #DDF8E6; color: #35C36C; }
+    .failed { background: #FFE1E1; color: #D93025; }
+    .expired { background: #EDEDED; color: #666666; }
+  </style>
+</head>
+<body>
+
+  <!-- pakai Google Icon -->
+  <div class="alert pending">
+    <span class="material-symbols-outlined">warning</span>
+    Pending
+  </div>
+
+  <!-- pakai Lucide -->
+  <div class="alert inprogress">
+    <i data-lucide="loader"></i>
+    In progress
+  </div>
+
+  <!-- pakai Google Icon -->
+  <div class="alert submitted">
+    <span class="material-symbols-outlined">send</span>
+    Submitted
+  </div>
+
+  <!-- pakai Lucide -->
+  <div class="alert inreview">
+    <i data-lucide="refresh-cw"></i>
+    In review
+  </div>
+
+  <!-- pakai Google Icon -->
+  <div class="alert success">
+    <span class="material-symbols-outlined">check_circle</span>
+    Success
+  </div>
+
+  <!-- pakai Google Icon -->
+  <div class="alert failed">
+    <span class="material-symbols-outlined">cancel</span>
+    Failed
+  </div>
+
+  <!-- pakai Google Icon -->
+  <div class="alert expired">
+    <span class="material-symbols-outlined">schedule</span>
+    Expired
+  </div>
+
+  <script>
+    lucide.createIcons(); // render Lucide icons
+  </script>
+</body>
+</html>
