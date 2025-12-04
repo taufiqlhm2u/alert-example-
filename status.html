@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>status</title>
+<style type="text/css" media="all">
+  .status {
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap; /* supaya tidak pindah baris */
+}
+
+/* STATUS COLORS */
+.status-pending {
+  background: #E9D1FF;
+  color: #A340FF;
+}
+
+.status-initiated {
+  background: #D7C7FF;
+  color: #5E35FF;
+}
+
+.status-approved {
+  background: #D4F6DF;
+  color: #2F9E44;
+}
+
+.status-failed {
+  background: #FFF3C9;
+  color: #C59A07;
+}
+
+.status-default {
+  background: #D7E8FF;
+  color: #2F74C0;
+}
+
+.status-flagged {
+  background: #FFD6D6;
+  color: #D93030;
+}
+</style>
+</head>
+<body>
+  <span class="status status-pending">⏳ Pending</span>
+<span class="status status-initiated">📄 Initiated</span>
+<span class="status status-approved">✔ Approved</span>
+<span class="status status-failed">⚠ Failed</span>
+<span class="status status-default">👤 Default</span>
+<span class="status status-flagged">🚩 Flagged</span>
+</body>
+</html>
